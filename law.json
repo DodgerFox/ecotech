@@ -1,0 +1,13 @@
+{
+  "name": "landings",
+  "date_of_creation": "03.08.2015",
+  "first_release_date": "03.08.2015",
+  "description": "Simple",
+  "languages": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "distribution_size_mb": 890,
+  "dependencies": []
+}

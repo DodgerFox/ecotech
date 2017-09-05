@@ -1,0 +1,54 @@
+section.welcome
+	height 100vh
+	width 100%
+	min-height 690px
+	padding-top 120px
+	padding-bottom 150px
+	display flex
+	align-items flex-end
+	+to-width(1450px)
+		padding-bottom 130px
+		min-height 630px
+	+to-width(1200px)
+		min-height 560px
+		padding-bottom 90px
+	+to-width(992px)
+		min-height 450px
+		padding-bottom 70px
+	.wrap
+		h1.welcome__title
+			font-family Black
+			font-size 124px
+			line-height 130px
+			color black
+			transition 0.1s all
+			+to-width(1450px)
+				font-size 105px
+				padding-right 100px
+			+to-width(1250px)
+				font-size 98px
+				line-height 110px
+				padding-right 0px
+			+to-width(992px)
+				font-size 74px
+				line-height 94px
+			+to-width(760px)
+				font-size 66px
+			+to-width(560px)
+				font-size 46px
+				line-height 64px
+			a
+				color #1539d0
+				position relative
+				t()
+				&:after
+					content ''
+					position absolute
+					bottom 8px
+					width 100%
+					left 0
+					border-bottom 1px solid rgba(21, 51, 208, .3)
+					t()
+				&:hover
+					&:after
+						border-bottom 1px solid transparent

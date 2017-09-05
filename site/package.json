@@ -1,0 +1,11 @@
+{
+  "name": "CompileStatic",
+  "description": "Make cdn",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "glob": "*",
+    "jsdom": "*",
+    "cdnizer": "*"
+  }
+}

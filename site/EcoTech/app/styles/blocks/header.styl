@@ -1,0 +1,63 @@
+header.header
+	position fixed
+	left 0
+	top 0
+	width 100%
+	color white
+	font-size 24px
+	padding 30px 0
+	padding-top 80px
+	z-index 20!important
+	t()
+	+to-width(960px)
+		padding-top 40px
+	.wrap
+		display flex
+		justify-content space-between
+		align-items center
+		.header__logo
+			display flex
+			.header__logo-icon
+				display none
+			.header__logo-text
+				font-size 32px
+				color black
+				font-family Black
+		nav.header__navigation
+			ul.header__navigation__items
+				display flex
+				li.header__navigation__item
+					font-size 17px
+					font-family Semibold
+					border-bottom 1px solid rgba(0, 0, 0, .1)
+					padding-bottom 2px
+					margin-right 30px
+					t()
+					cursor pointer
+					&:last-child
+						margin-right 0
+					&:hover
+						border-bottom 1px solid transparent
+					a
+						color black
+					+to-width(1250px)
+						font-size 16px
+						margin-right 25px
+	&.header-detail
+		.wrap
+			.header__logo
+				.header__logo-text
+					color white
+			nav.header__navigation
+				ul.header__navigation__items
+					li.header__navigation__item
+						position relative
+						border-bottom 1px solid rgba(255, 255, 255, .1)
+						a
+							color white
+						&:first-child
+							&:after
+								content ''
+								position absolute
+								left 0px
+								

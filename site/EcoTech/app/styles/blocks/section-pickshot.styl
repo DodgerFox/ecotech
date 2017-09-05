@@ -1,0 +1,35 @@
+section.pickshot
+	height 100vh
+	width 100%
+	background-size cover
+	background-position center
+	&:after
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color rgba(0, 0, 0, .5)		
+	.wrap
+		display flex
+		justify-content center
+		align-items center
+		flex-direction column
+		height 100%
+		z-index 2
+		h1.pickshot__title
+			font-size 100px
+			color white
+			font-family Black
+			+to-width(700px)
+				font-size 80px
+			+to-width(540px)
+				font-size 70px
+		p.pickshot__text
+			color white
+			margin-top 15px
+			font-size 16px
+			width 320px
+			line-height 22px
+			text-align center

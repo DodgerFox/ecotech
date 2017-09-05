@@ -1,0 +1,28 @@
+{
+  "name": "jquery.csssr.validation",
+  "main": "index.js",
+  "version": "0.0.24",
+  "description": "Universal validation plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azanov/jquery.csssr.validation"
+  },
+  "keywords": [
+    "validation",
+    "validator"
+  ],
+  "author": "Pavel Azanov",
+  "bugs": {
+    "url": "https://github.com/azanov/jquery.csssr.validation/issues"
+  },
+  "homepage": "https://github.com/azanov/jquery.csssr.validation",
+  "devDependencies": {
+    "gulp": "^3.8.5",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^3.0.1",
+    "jshint-stylish": "^0.4.0"
+  }
+}
