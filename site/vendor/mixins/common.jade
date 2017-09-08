@@ -1,0 +1,8 @@
+
+mixin img(name, width, height, title)
+    img(src='../assets/images/#{name}?' + timestamp width='#{width}' height='#{height}' title='#{title}' alt='#{title}')
+
+mixin section(name)
+    section(class='section #{name}' id='#{name}')
+        block
+// updated (12.02)

@@ -20,12 +20,11 @@ var wow = new WOW().init();
 }
 
 var $grid = $('.projects__items').isotope({
-  // options...
   itemSelector: '.projects__item',
   layoutMode: 'fitRows',
   percentPosition: true
-
 });
+
 
 
 var filters = {};
@@ -42,7 +41,10 @@ $('.filters').on( 'click', '.button', function() {
   var filterValue = concatValues( filters );
   // set filter for Isotope
   $grid.isotope({ filter: filterValue });
+  
+
 });
+
 
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
@@ -63,6 +65,14 @@ function concatValues( obj ) {
   return value;
 }
 
+$grid.on( 'arrangeComplete', function( event, filteredItems ) {
+  console.log( 'arrangeComplete with ' + filteredItems.length + ' items' );
+  $(filteredItems[0]).removeClass('sites');
+  var allItems = filteredItems;
+  $(allItems[0]).addClass('activeQQ')
+  console.log(allItems[0])
+
+});
 
 
 

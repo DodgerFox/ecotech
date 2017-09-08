@@ -1,0 +1,48 @@
+mixin review(number)
+
+    | <div class="reviews__block ${{ base.reviews.review.review-#{number}.platform }}$">
+
+    .reviews__head
+
+        .author
+
+            .author__photo
+                img(src="./../../vendor/images/reviews/photos/${{ base.reviews.review.review-#{number}.photo }}$" width="36" height="36" alt="${{ base.reviews.review.review-#{number}.name }}$")
+
+            .author__info
+                p.author__name
+                    | ${{ base.reviews.review.review-#{number}.name }}$
+
+                p.reviews__date.review__date--facebook
+                    | ${{ base.reviews.review.review-#{number}.date }}$
+
+                p.reviews__date.author__nickname--twitter
+                    | &#64;${{ base.reviews.review.review-#{number}.nickname }}$
+
+        .icon
+
+            img.icon__item.icon__item--facebook(src="./../../vendor/images/socials/icon__facebook.png" width="24" height="24")
+            img.icon__item.icon__item--twitter(src="./../../vendor/images/socials/icon__twitter.png" width="24" height="24")
+
+
+    .reviews__content  ${{ base.reviews.review.review-#{number}.text }}$
+
+    .reviews__footer.reviews__footer--facebook
+        .reviews__info
+            .likes
+                img.icon__item.icon__item--likes(src="./../../vendor/images/socials/icon__likes.png" width="16" height="16")
+                | ${{ base.reviews.review.review-#{number}.likes }}$
+            .comments
+                img.icon__item.icon__item--comments(src="./../../vendor/images/socials/icon__comments.png" width="14" height="14")
+                | ${{ base.reviews.review.review-#{number}.comments }}$
+
+
+    .reviews__footer.reviews__footer--twitter
+        .reviews__info
+            .date
+                | ${{ base.reviews.review.review-#{number}.date }}$
+            .likes
+                img.icon__item.icon__item--likes(src="./../../vendor/images/socials/icon__likes.png" width="16" height="16")
+                | ${{ base.reviews.review.review-#{number}.likes }}$
+
+    | </div>
