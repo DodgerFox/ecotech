@@ -20,14 +20,15 @@ section.projects
 					color black
 					border-bottom 1px solid transparent
 	.projects__tags
-		margin-top 23px
+		margin-top 13px
 		width 100%
 		ul.projects__tags__items
 			display flex
 			width 100%
 			button.projects__tags__item
 				font-size 16px
-				margin-right 24px
+				padding 10px 24px
+				border-radius 50px
 				font-family Semibold
 				border none
 				background transparent
@@ -35,6 +36,8 @@ section.projects
 				t()
 				&.is-checked
 					color black
+					&:first-child
+						background #7ed321
 	.projects__items
 		margin-top 40px
 		width 100%
@@ -58,6 +61,7 @@ section.projects
 				height 100%
 				background-repeat no-repeat
 				position relative
+				background-size 100%
 				t()
 				.projects__item__wrap
 					opacity 0
@@ -71,18 +75,24 @@ section.projects
 						color #ffffff
 						font-size 32px
 						font-family Black
+						transform translateX(-25px)
+						transition 0.65s all
 					p.projects__item__text
 						font-size 16px
 						color white
 						margin-top 10px
+						transform translateX(-25px)
 						line-height 20px
+						transition 0.35s all
 					.projects__item__button
 						color #1539d0
 						background-color white
 						margin-top 18px
+						transform translateX(-25px)
 						position absolute
 						bottom 40px
 						left 39px
+						transition 0.25s all
 					.projects__item__date
 						position absolute
 						z-index 2
@@ -91,6 +101,13 @@ section.projects
 						font-size 32px
 						font-family Black
 						color rgba(255, 255, 255, .3)
+						transform translateY(25px)
+						opacity 0
+						transition 0.40s all
+						transition-delay 0.2s
+					.tags
+						transform translateX(-25px)
+						transition 0.5s all
 				&:before
 					content ''
 					position absolute
@@ -100,9 +117,21 @@ section.projects
 					width 100%
 					height 100%
 					background-color rgba(33, 33, 33, 0)
-					t()
+					transition 0.2s all
 				&:hover
+					background-size 105%
 					&:before
-						background-color rgba(33, 33, 33, 0.8)
+						background-color rgba(33, 33, 33, 0.7)
 					.projects__item__wrap
+						opacity 1
+					p.projects__item__text
+						transform translateX(0px)
+					.projects__item__button
+						transform translateX(0px)
+					h3.projects__item__title
+						transform translateX(0px)
+					.tags
+						transform translateX(0px)
+					.projects__item__date
+						transform translateY(0px)
 						opacity 1
