@@ -1,13 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="12523.023 851 21.953 22.141">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <g id="close" transform="translate(12276 790.453)">
-    <rect id="Rectangle_414" data-name="Rectangle 414" class="cls-1" width="28" height="3.047" transform="translate(249.178 60.547) rotate(45)"/>
-    <rect id="Rectangle_415" data-name="Rectangle 415" class="cls-1" width="28" height="3.047" transform="translate(247.023 80.533) rotate(-45)"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>469AB5E3-200E-4B06-B79D-5C46D43407DD</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Write-us" transform="translate(-1226.000000, -802.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="WriteUs" transform="translate(0.000000, 728.000000)">
+                <g id="Close" transform="translate(1226.000000, 70.000000)">
+                    <path d="M0.429065744,15.5755479 C0.724336794,15.8708189 1.09342561,16 1.48096886,16 C1.86851211,16 2.23760092,15.8523645 2.53287197,15.5755479 L6.00230681,12.0876586 L9.47174164,15.5570934 C9.76701269,15.8523645 10.1361015,15.9815456 10.5236448,15.9815456 C10.911188,15.9815456 11.2802768,15.83391 11.5755479,15.5570934 C12.1476355,14.9850058 12.1476355,14.0438293 11.5755479,13.4717416 L8.08765859,10.0023068 L11.5570934,6.53287197 C12.1291811,5.96078431 12.1291811,5.01960784 11.5570934,4.44752018 C10.9850058,3.87543253 10.0438293,3.87543253 9.47174164,4.44752018 L6.00230681,7.91695502 L2.53287197,4.42906574 C1.96078431,3.85697809 1.01960784,3.85697809 0.447520185,4.42906574 C-0.124567474,5.0011534 -0.124567474,5.94232987 0.447520185,6.51441753 L3.91695502,10.0023068 L0.429065744,13.4717416 C-0.143021915,14.0622837 -0.143021915,14.9850058 0.429065744,15.5755479 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

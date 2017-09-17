@@ -6,6 +6,9 @@ section.welcome
 	padding-bottom 150px
 	display flex
 	align-items flex-end
+	background #131417
+	position relative
+	overflow hidden
 	+to-width(1450px)
 		padding-bottom 130px
 		min-height 630px
@@ -18,37 +21,52 @@ section.welcome
 	.wrap
 		h1.welcome__title
 			font-family Black
-			font-size 124px
-			line-height 130px
-			color black
+			font-size 80px
+			line-height 90px
+			color white
 			transition 0.1s all
+			position relative
+			z-index 4
 			+to-width(1450px)
-				font-size 105px
-				padding-right 100px
+				font-size 70px
+				padding-right 80px
 			+to-width(1250px)
-				font-size 98px
-				line-height 110px
+				font-size 70px
+				line-height 80px
 				padding-right 0px
 			+to-width(992px)
-				font-size 74px
-				line-height 94px
+				font-size 64px
+				line-height 74px
 			+to-width(760px)
 				font-size 66px
 			+to-width(560px)
 				font-size 46px
 				line-height 64px
 			a
-				color #1539d0
+				color #1567d0
 				position relative
 				t()
 				&:after
 					content ''
 					position absolute
-					bottom 8px
+					bottom 12px
 					width 100%
 					left 0
-					border-bottom 1px solid rgba(21, 51, 208, .3)
+					border-bottom 1px solid rgba(21, 103, 208, .3)
 					t()
 				&:hover
 					&:after
 						border-bottom 1px solid transparent
+		
+		.welcome__button
+			width 241px
+			height 54px
+			background-color #1567d0
+			border-radius 50px
+			margin-top 30px
+			display flex
+			align-items center
+			justify-content center
+			color white
+			font-family Bold
+			cursor pointer

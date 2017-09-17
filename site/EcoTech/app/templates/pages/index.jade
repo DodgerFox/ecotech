@@ -3,14 +3,18 @@ extends ../layouts/default
 block head
 
 block content
-	include ../blocks/header
-	include ../blocks/section-welcome
-	include ../blocks/footer
+	include ../blocks/section-contacts
+	.page
+		include ../blocks/header
+		include ../blocks/section-welcome
+	.footer-slide
+		include ../blocks/section-contact-with-us
+		include ../blocks/section-policy
 
 	script(src="assets/scripts/libs/jquery/dist/jquery.min.js")
-	//- script(src="assets/scripts/jq.validation.js")
-	//-script(src="assets/scripts/libs/anchor-js/anchor.min.js")
-	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIxXO_SrSX_b5mDkAa-nep-O7AuFn1WQ&callback=initMap")
-	//- script(src="assets/scripts/sticky.js")
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIxXO_SrSX_b5mDkAa-nep-O7AuFn1WQ&callback=initMap")
+	script(src='assets/scripts/libs/jquery-validation/dist/jquery.validate.min.js')
+	script(src='assets/scripts/libs/jquery-masked/jquery-masked.js')
 	script(src='assets/scripts/libs/wow/dist/wow.min.js')
 	script(src="assets/scripts/main.js")
+	script(src="assets/scripts/general.js")

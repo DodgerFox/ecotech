@@ -2,76 +2,162 @@ section.projects
 	.wrap
 		.filters
 			nav.projects__nav
-				.projects__nav__list.button-group(data-filter-group="category")
-					button.projects__nav__item-link.button.is-checked(data-filter="") Все вместе
-					button.projects__nav__item-link.button(data-filter=".sites") Сайты
-					button.projects__nav__item-link.button(data-filter=".games") Игры
-					button.projects__nav__item-link.button(data-filter=".apps") Приложения для бизнеса
+				.projects__nav__list(data-filter-group="buttons")
+					button.projects__nav__item-link.button.active(data-value=".sites, .games, .apps") Все вместе
+					button.projects__nav__item-link.button(data-value=".sites") Сайты
+					button.projects__nav__item-link.button(data-value=".games") Игры
+					button.projects__nav__item-link.button(data-value=".apps") Приложения для бизнеса
 			.projects__tags
-				ul.projects__tags__items.button-group(data-filter-group="tags")
-					button.projects__tags__item.button.is-checked(data-filter=".design") #дизайн
-					button.projects__tags__item.button.is-checked(data-filter=".frontend") #верстка
-					button.projects__tags__item.button.is-checked(data-filter=".backend") #бекенд
-					button.projects__tags__item.button.is-checked(data-filter=".designing") #проектирование
+				ul.projects__tags__items
+						input#checkbox-design(type="checkbox" value=".design").projects__tags__item
+						label(for="checkbox-design") #дизайн
+						input#checkbox-frontend(type="checkbox" value=".frontend").projects__tags__item
+						label(for="checkbox-frontend") #верстка
+						input#checkbox-backend(type="checkbox" value=".backend").projects__tags__item
+						label(for="checkbox-backend") #бэкенд
+						input#checkbox-designing(type="checkbox" value=".designing").projects__tags__item
+						label(for="checkbox-designing") #проектирование
+
 
 		.projects__items
-			.projects__item.design.sites
-				.projects__item__content(style="background-image: url('assets/images/image1.jpg');background-color: #e63e33;")
+			.projects__item.design.sites.col-1
+				.projects__item__content(style="background-image: url('assets/images/image1.jpg');background-color: #e63e33;" )
 					.projects__item__wrap
-						h3.projects__item__title Грейнрус
+						h3.projects__item__title Дизайн сайта
+						.projects__item__date 2017
+						.tags
+							.tags__tag.tags__tag_design #дизайн
+							.tags__tag.tags__tag_frontend #верстка
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.design.backend.sites.col-2
+				.projects__item__content(style="background-image: url('assets/images/image2.png');background-color: #fbd433;" )
+					.projects__item__wrap
+						h3.projects__item__title Дизайн сайта
+						.projects__item__date 2017
+						.tags
+							.tags__tag #дизайн
+							.tags__tag.tags__tag_backend #backend
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.design.games.col-2
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
+					.projects__item__wrap
+						h3.projects__item__title Фронтенд игры
+						.projects__item__date 2017
+						.tags
+							.tags__tag #дизайн
+							.tags__tag.tags__tag_designing #дизайн
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.design.apps.col-1
+				.projects__item__content(style="background-image: url('assets/images/image4.png');background-color: #a8bee7;" )
+					.projects__item__wrap
+						h3.projects__item__title Фронтенд приложения
 						.projects__item__date 2017
 						.tags
 							.tags__tag #дизайн
 							.tags__tag #дизайн
 						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
 						a(href="detail.html").simple-button.projects__item__button Смотреть проект
-			.projects__item.games
-				.projects__item__content(style="background-image: url('assets/images/image2.png');background-color: #fbd433;")
+			.projects__item.frontend.sites.col-1
+				.projects__item__content(style="background-image: url('assets/images/image1.jpg');background-color: #e63e33;" )
 					.projects__item__wrap
-						h3.projects__item__title Грейнрус
+						h3.projects__item__title Фронтенд игры
 						.projects__item__date 2017
 						.tags
 							.tags__tag #дизайн
 							.tags__tag #дизайн
 						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
 						a(href="detail.html").simple-button.projects__item__button Смотреть проект
-			.projects__item.backend.games
-				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;")
+			.projects__item.frontend.games.col-2
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
 					.projects__item__wrap
-						h3.projects__item__title Грейнрус
+						h3.projects__item__title Фронтенд приложения
 						.projects__item__date 2017
 						.tags
 							.tags__tag #дизайн
 							.tags__tag #дизайн
 						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
 						a(href="detail.html").simple-button.projects__item__button Смотреть проект
-			.projects__item.frontend.sites
-				.projects__item__content(style="background-image: url('assets/images/image4.png');background-color: #a8bee7;")
+			.projects__item.frontend.sites.col-2
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
 					.projects__item__wrap
-						h3.projects__item__title Грейнрус
+						h3.projects__item__title Фронтенд сайта
 						.projects__item__date 2017
 						.tags
 							.tags__tag #дизайн
 							.tags__tag #дизайн
 						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
 						a(href="detail.html").simple-button.projects__item__button Смотреть проект
-			.projects__item.frontend.sites
-				.projects__item__content(style="background-image: url('assets/images/image1.jpg');background-color: #e63e33;")
+			.projects__item.frontend.apps.col-1
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
 					.projects__item__wrap
-						h3.projects__item__title Грейнрус
+						h3.projects__item__title Прототип приложения
 						.projects__item__date 2017
 						.tags
 							.tags__tag #дизайн
 							.tags__tag #дизайн
 						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
 						a(href="detail.html").simple-button.projects__item__button Смотреть проект
-			.projects__item.backend
-				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;")
+			.projects__item.backend.sites.col-1
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
 					.projects__item__wrap
-						h3.projects__item__title Грейнрус
+						h3.projects__item__title Прототип приложения
 						.projects__item__date 2017
 						.tags
 							.tags__tag #дизайн
 							.tags__tag #дизайн
 						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
 						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.backend.apps.col-2
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
+					.projects__item__wrap
+						h3.projects__item__title Прототип приложения
+						.projects__item__date 2017
+						.tags
+							.tags__tag #дизайн
+							.tags__tag #дизайн
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.backend.games.col-2
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
+					.projects__item__wrap
+						h3.projects__item__title Прототип приложения
+						.projects__item__date 2017
+						.tags
+							.tags__tag #дизайн
+							.tags__tag #дизайн
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.designing.games.col-1
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
+					.projects__item__wrap
+						h3.projects__item__title Прототип приложения
+						.projects__item__date 2017
+						.tags
+							.tags__tag #дизайн
+							.tags__tag #дизайн
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.designing.sites.col-1
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
+					.projects__item__wrap
+						h3.projects__item__title Прототип приложения
+						.projects__item__date 2017
+						.tags
+							.tags__tag #дизайн
+							.tags__tag #дизайн
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			.projects__item.backend.apps.col-2
+				.projects__item__content(style="background-image: url('assets/images/image3.png');background-color: #fbd433;" )
+					.projects__item__wrap
+						h3.projects__item__title Прототип приложения
+						.projects__item__date 2017
+						.tags
+							.tags__tag #дизайн
+							.tags__tag #дизайн
+						p.projects__item__text Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения
+						a(href="detail.html").simple-button.projects__item__button Смотреть проект
+			

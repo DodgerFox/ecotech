@@ -1,0 +1,20 @@
+section.contact-with-us
+	.wrap
+		.contact-with-us__wrap-title
+			h2.section__title Связаться с нами
+			.contact-with-us__close
+				img(src="assets/images/svg/close.svg")
+				p.contact-with-us__close__text Закрыть
+		form.contact-with-us__form#contact-with-us__form(role="form")
+			.contact-with-us__form__item
+				p.contact-with-us__form__text Представьтесь
+				input#name(name="name" minlength="2" type="text" required).contact-with-us__form__input
+			.contact-with-us__form__item
+				p.contact-with-us__form__text Ваша почта
+				input#email(type="text" name="email" required).contact-with-us__form__input
+			.contact-with-us__form__item
+				p.contact-with-us__form__text Контактный телефон
+				input#telephone(type="text" name="telephone").contact-with-us__form__input
+			.contact-with-us__form__item
+				input#send-button(type="submit" name="button").contact-with-us__form__button
+				p.contact-with-us__form__confidential О конфиденциальности

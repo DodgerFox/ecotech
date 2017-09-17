@@ -1,5 +1,5 @@
 header.header
-	position fixed
+	position absolute
 	left 0
 	top 0
 	width 100%
@@ -8,6 +8,7 @@ header.header
 	padding 30px 0
 	padding-top 80px
 	z-index 20!important
+	visibility hidden
 	t()
 	+to-width(960px)
 		padding-top 40px
@@ -21,7 +22,7 @@ header.header
 				display none
 			.header__logo-text
 				font-size 32px
-				color black
+				color white
 				font-family Black
 		nav.header__navigation
 			ul.header__navigation__items
@@ -29,7 +30,7 @@ header.header
 				li.header__navigation__item
 					font-size 17px
 					font-family Semibold
-					border-bottom 1px solid rgba(0, 0, 0, .1)
+					border-bottom 1px solid rgba(255, 255, 255, .1)
 					padding-bottom 2px
 					margin-right 30px
 					t()
@@ -39,11 +40,13 @@ header.header
 					&:hover
 						border-bottom 1px solid transparent
 					a
-						color black
+						color white
 					+to-width(1250px)
 						font-size 16px
 						margin-right 25px
-	&.header-detail
+.page-detail
+	.header
+		visibility visible
 		.wrap
 			.header__logo
 				.header__logo-text
@@ -61,4 +64,24 @@ header.header
 								position absolute
 								left -28px
 								top -1px
-								
+.page-projects
+	.header
+		visibility visible
+		.wrap
+			.header__logo
+				.header__logo-text
+					color #212121
+			nav.header__navigation
+				ul.header__navigation__items
+					li.header__navigation__item
+						position relative
+						border-bottom 1px solid rgba(0, 0, 0, .1)
+						a
+							color #212121
+						&:first-child
+							&:after
+								content '←'
+								position absolute
+								left -28px
+								top -1px
+	

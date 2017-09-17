@@ -16,44 +16,56 @@ section.projects
 				&:hover
 					color black
 					border-bottom 1px solid transparent
-				&.is-checked
+				&.active
 					color black
 					border-bottom 1px solid transparent
 	.projects__tags
-		margin-top 13px
+		margin-top 33px
 		width 100%
 		ul.projects__tags__items
 			display flex
 			width 100%
-			button.projects__tags__item
+			margin-left -16px
+			input
+				display none
+				&:checked + label
+					color white
+				&#checkbox-design
+					&:checked + label
+						background #7ed321
+				&#checkbox-frontend
+					&:checked + label
+						background #fee23c
+						color black
+				&#checkbox-backend
+					&:checked + label
+						background #2c9cfc
+				&#checkbox-designing
+					&:checked + label
+						background #b79d82
+				
+			label
+				cursor pointer
 				font-size 16px
-				padding 10px 24px
+				padding 6px 18px
 				border-radius 50px
 				font-family Semibold
 				border none
 				background transparent
 				color #555
+				margin-right 12px
 				t()
-				&.is-checked
-					color black
-					&:first-child
-						background #7ed321
 	.projects__items
-		margin-top 40px
 		width 100%
 		flex()
 		.projects__item
 			height 258px
-			width 33.8%	
 			margin-top 50px
-			&:nth-child(even)
-				padding-left 20px
-			&:nth-child(odd)
-				padding-right 20px
-			&:nth-child(3n+1)
-				width 66.2%
-			&:nth-child(3n+5)
-				width 66.2%
+			padding 0 20px
+			&.col-1
+				width 33%
+			&.col-2
+				width 67%
 			.projects__item__content
 				background #333
 				background-position center

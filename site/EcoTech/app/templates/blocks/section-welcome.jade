@@ -1,7 +1,30 @@
 section.welcome
-	.background-animation.wow.fadeInDown(data-wow-duration="1s" data-wow-delay="0s")
-		.background-animation__elem_square
-		.background-animation__elem_line
-	.wrap.wow.fadeInDown(data-wow-duration="1s" data-wow-delay="2s")
-		h1.welcome__title Делаем <a href="#">сайты</a>, <a href="#">игры</a> и <a href="#">приложения</a> <a href="#">для бизнеса</a>
+	.background-animation
+		.background-animation__elems
+			.wrap.wow.fadeIn(data-wow-duration="2s" data-wow-delay="0s" style="visibility:hidden;")
+				img(src="assets/images/svg/rectangle.svg").background-animation__elem_square
+				img(src="assets/images/svg/rectangle.svg").background-animation__elem_square1
+				img(src="assets/images/svg/rectangle.svg").background-animation__elem_square2
+				img(src="assets/images/svg/line.svg").background-animation__elem_line
+				img(src="assets/images/svg/line.svg").background-animation__elem_line2
+				img(src="assets/images/svg/triangle.svg").background-animation__elem__triangle
+				img(src="assets/images/svg/triangle.svg").background-animation__elem__triangle1
+				img(src="assets/images/svg/triangle.svg").background-animation__elem__triangle2
+		.background-animation__devices
+			.wrap
+				.background-animation__devices__iphone.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="2.5s" style="visibility:hidden;")
+					img(src="assets/images/iphone.png")
+					p.background-animation__devices__iphone-text Сайт мойки «<a href="#">Автосити</a>» 
+					.background-animation__devices__iphone-line
+				.background-animation__devices__macbook.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="2.7s" style="visibility:hidden;")
+					img(src="assets/images/macbook.png")
+					p.background-animation__devices__macbook-text Сайт стартапа «<a href="#">Пэйдрайверс</a>» 
+					.background-animation__devices__macbook-line
+				.background-animation__devices__android.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="2.9s" style="visibility:hidden;")
+					img(src="assets/images/android.png")
+					p.background-animation__devices__android-text Игра на Андроид «<a href="#">Старфайт Арена</a>» 
+					.background-animation__devices__android-line
 
+	.wrap
+		h1.welcome__title.wow.slideInLeft(data-wow-duration="1s" data-wow-delay="1.1s" style="visibility:hidden;") Делаем <a href="projects.html#filter=.sites">сайты</a>,<br> <a href="projects.html#filter=.games">игры</a> и <a href="projects.html#filter=.apps">приложения</a><br> для бизнеса
+		.welcome__button.wow.slideInLeft(data-wow-duration="1s" data-wow-delay="1.2s" style="visibility:hidden;") Связаться с нами

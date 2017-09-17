@@ -39,79 +39,112 @@
 		<meta name="description">
 		<meta name="copyright">
 		<!-- Common CSS-->
-		<link href="assets/styles/common.css?1504865400437" rel="stylesheet">
+		<link href="assets/styles/common.css?1505646749338" rel="stylesheet">
 	</head>
 
 	<body>
 <!-- trace:dist\detail.html -->
-		<header class="header">
+		<section class="contacts">
 			<div class="wrap">
-				<a href="/" class="header__logo">
-					<img src="assets/images/svg/logo.svg" class="header__logo-icon">
-					<p class="header__logo-text">EcoTech</p>
-				</a>
-				<nav class="header__navigation">
-					<ul class="header__navigation__items">
-						<li class="header__navigation__item links__navigation__about"><a href="projects.html">Проекты</a>
-						</li>
-						<li class="header__navigation__item links__navigation__factories"><a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<section style="background-image: url('assets/images/detail.jpg');" class="pickshot">
-			<div class="wrap">
-				<h1 class="pickshot__title">Грейнрус</h1>
-				<div class="tags">
-					<div class="tags__tag">#дизайн</div>
+				<div class="contacts__wrap-title">
+					<h2 class="section__title">Контакты</h2>
+					<div class="contacts__close">
+						<img src="assets/images/svg/close.svg">
+						<p class="contacts__close__text">Закрыть</p>
+					</div>
 				</div>
-				<p class="pickshot__text">Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения</p>
+			</div>
+			<div id="map" class="map"></div>
+			<div class="wrap">
+				<div class="contacts__items">
+					<div class="contacts__item">
+						<h3 class="contacts__title">Приехать</h3>
+						<p class="contacts__text">г. Санкт-Петербург, ул. Разъезжая 5</p>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__title">Написать</h3><a href="mailto:sales@ecotechcorp.ru" class="contacts__link contacts__mail">sales@ecotechcorp.ru</a>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__title">Позвонить</h3><a href="tel: 8 931 222 11 33" class="contacts__link">+7 (931) 222 11 33</a>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="detail-main">
-			<div class="wrap">
-				<div class="detail-main__left">
-					<div class="detail-main__left__item">
-						<h2 class="detail-main__title">Задача</h2>
-						<div class="detail-main__line"></div>
-						<p class="detail-main__text">Холдинговой компании ReCa, владеющей 18 ресторанами в Санкт-Петербурге, потребовалось объединить их в одном интернет-ресурсе.</p>
-						<p class="detail-main__text">Наша задача состояла в том, чтобы полноценно представить почти два десятка различных проектов в рамках одного ресурса, подчеркнув особенности каждого, но сохранив при этом объединяющее начало.</p>
-					</div>
-					<div class="detail-main__left__item">
-						<h2 class="detail-main__title">Над проектом работали</h2>
-						<div class="detail-main__line"></div>
-						<ul class="detail-main__list">
-							<li class="detail-main__text">Дизайн <span>Егор Старков</span>
+		<div class="page page-detail">
+			<!-- Добавь .header-detail в детальной странице к .header-->
+			<!-- Добавь .header-projects в детальной странице к .header-->
+			<header data-wow-duration="2s" data-wow-delay="0.4s" class="header wow fadeIn">
+				<div class="wrap">
+					<a href="/" class="header__logo">
+						<img src="assets/images/svg/logo.svg" class="header__logo-icon">
+						<p class="header__logo-text">EcoTech</p>
+					</a>
+					<nav class="header__navigation">
+						<ul class="header__navigation__items">
+							<li class="header__navigation__item links__navigation__projects"><a href="projects.html">Проекты</a>
 							</li>
-							<li class="detail-main__text">Frontend <span>Леша Чернов</span>
-							</li>
-							<li class="detail-main__text">Backend <span>Алексей Русаковский</span>
+							<li class="header__navigation__item links__navigation__contacts"><a href="#">Контакты</a>
 							</li>
 						</ul>
+					</nav>
+				</div>
+			</header>
+			<section style="background-image: url('assets/images/detail.jpg');" class="pickshot">
+				<div class="wrap">
+					<h1 class="pickshot__title">Грейнрус</h1>
+					<div class="tags">
+						<div class="tags__tag tags__tag_design">#дизайн</div>
+						<div class="tags__tag tags__tag_frontend">#frontend</div>
+						<div class="tags__tag tags__tag_backend">#backend</div>
+						<div class="tags__tag tags__tag_designing">#прототипирование</div>
+					</div>
+					<p class="pickshot__text">Адаптация под телефон онлайн-магазина по продаже товаров для пивоварения</p>
+				</div>
+			</section>
+			<section class="detail-main">
+				<div class="wrap">
+					<div class="detail-main__left">
+						<div class="detail-main__left__item">
+							<h2 class="detail-main__title">Задача</h2>
+							<div class="detail-main__line"></div>
+							<p class="detail-main__text">Холдинговой компании ReCa, владеющей 18 ресторанами в Санкт-Петербурге, потребовалось объединить их в одном интернет-ресурсе.</p>
+							<p class="detail-main__text">Наша задача состояла в том, чтобы полноценно представить почти два десятка различных проектов в рамках одного ресурса, подчеркнув особенности каждого, но сохранив при этом объединяющее начало.</p>
+						</div>
+						<div class="detail-main__left__item">
+							<h2 class="detail-main__title">Над проектом работали</h2>
+							<div class="detail-main__line"></div>
+							<ul class="detail-main__list">
+								<li class="detail-main__text">Дизайн <span>Егор Старков</span>
+								</li>
+								<li class="detail-main__text">Frontend <span>Леша Чернов</span>
+								</li>
+								<li class="detail-main__text">Backend <span>Алексей Русаковский</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="detail-main__right">
+						<div style="background-image:url('assets/images/logo.png');" class="detail-main__right__image"></div>
+						<p class="detail-main__right__text">Грейнрус – торгово-производственная компания, основными направлениями деятельности, которой являются: сырье для пивоваренной отрасли, виноделие, импорт шрота и зерновой трейдинг.</p>
 					</div>
 				</div>
-				<div class="detail-main__right">
-					<div style="background-image:url('assets/images/logo.png');" class="detail-main__right__image"></div>
-					<p class="detail-main__right__text">Грейнрус – торгово-производственная компания, основными направлениями деятельности, которой являются: сырье для пивоваренной отрасли, виноделие, импорт шрота и зерновой трейдинг.</p>
+			</section>
+			<section class="detail-picture"></section>
+			<section class="detail-basic">
+				<div class="wrap">
+					<div class="detail-basic__line"></div>
+					<p class="detail-basic__text">Грейнрус – торгово-производственная компания, основными направлениями деятельности, которой являются: сырье для пивоваренной отрасли, виноделие, импорт шрота и зерновой трейдинг.</p>
 				</div>
-			</div>
-		</section>
-		<section class="detail-picture"></section>
-		<section class="detail-basic">
-			<div class="wrap">
-				<div class="detail-basic__line"></div>
-				<p class="detail-basic__text">Грейнрус – торгово-производственная компания, основными направлениями деятельности, которой являются: сырье для пивоваренной отрасли, виноделие, импорт шрота и зерновой трейдинг.</p>
-			</div>
-		</section>
-		<section class="detail-picture"></section>
-		<section class="detail-picture"></section>
-		<section class="detail-basic">
-			<div class="wrap">
-				<div class="detail-basic__line"></div>
-				<p class="detail-basic__text">Грейнрус – торгово-производственная компания, основными направлениями деятельности, которой являются: сырье для пивоваренной отрасли, виноделие, импорт шрота и зерновой трейдинг.</p><a href="#" class="simple-button detail-basic__button">Смотреть проект</a>
-			</div>
-		</section>
+			</section>
+			<section class="detail-picture"></section>
+			<section class="detail-picture"></section>
+			<section class="detail-basic">
+				<div class="wrap">
+					<div class="detail-basic__line"></div>
+					<p class="detail-basic__text">Грейнрус – торгово-производственная компания, основными направлениями деятельности, которой являются: сырье для пивоваренной отрасли, виноделие, импорт шрота и зерновой трейдинг.</p><a href="#" class="simple-button detail-basic__button">Смотреть проект</a>
+				</div>
+			</section>
+		</div>
 		<script src="assets/scripts/libs/jquery/dist/jquery.min.js"></script>
 		<script src="assets/scripts/main.js"></script>
 	</body>

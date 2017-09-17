@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="159px" height="85px" viewBox="0 0 159 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>2C413819-3E42-4EF3-9C77-4F042CC75AD5</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-7.8%" y="-200.0%" width="115.6%" height="500.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main" transform="translate(-722.000000, -246.000000)" fill="#313131">
+            <g id="Shapes" transform="translate(103.000000, 63.000000)">
+                <rect id="Rectangle-3" filter="url(#filter-1)" transform="translate(698.778592, 225.489856) rotate(-336.000000) translate(-698.778592, -225.489856) " x="621.778592" y="222.489856" width="154" height="6" rx="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

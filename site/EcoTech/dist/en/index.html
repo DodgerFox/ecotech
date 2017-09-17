@@ -39,39 +39,167 @@
 		<meta name="description">
 		<meta name="copyright">
 		<!-- Common CSS-->
-		<link href="assets/styles/common.css?1504865400562" rel="stylesheet">
+		<link href="assets/styles/common.css?1505646749531" rel="stylesheet">
 	</head>
 
 	<body>
 <!-- trace:dist\index.html -->
-		<header class="header">
+		<section class="contacts">
 			<div class="wrap">
-				<a href="/" class="header__logo">
-					<img src="assets/images/svg/logo.svg" class="header__logo-icon">
-					<p class="header__logo-text">EcoTech</p>
-				</a>
-				<nav class="header__navigation">
-					<ul class="header__navigation__items">
-						<li class="header__navigation__item links__navigation__about"><a href="projects.html">Проекты</a>
-						</li>
-						<li class="header__navigation__item links__navigation__factories"><a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="contacts__wrap-title">
+					<h2 class="section__title">Контакты</h2>
+					<div class="contacts__close">
+						<img src="assets/images/svg/close.svg">
+						<p class="contacts__close__text">Закрыть</p>
+					</div>
+				</div>
 			</div>
-		</header>
-		<section class="welcome">
-			<div data-wow-duration="1s" data-wow-delay="0s" class="background-animation wow fadeInDown">
-				<div class="background-animation__elem_square"></div>
-				<div class="background-animation__elem_line"></div>
-			</div>
-			<div data-wow-duration="1s" data-wow-delay="2s" class="wrap wow fadeInDown">
-				<h1 class="welcome__title">Делаем <a href="#">сайты</a>, <a href="#">игры</a> и <a href="#">приложения</a> <a href="#">для бизнеса</a></h1>
+			<div id="map" class="map"></div>
+			<div class="wrap">
+				<div class="contacts__items">
+					<div class="contacts__item">
+						<h3 class="contacts__title">Приехать</h3>
+						<p class="contacts__text">г. Санкт-Петербург, ул. Разъезжая 5</p>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__title">Написать</h3><a href="mailto:sales@ecotechcorp.ru" class="contacts__link contacts__mail">sales@ecotechcorp.ru</a>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__title">Позвонить</h3><a href="tel: 8 931 222 11 33" class="contacts__link">+7 (931) 222 11 33</a>
+					</div>
+				</div>
 			</div>
 		</section>
+		<div class="page">
+			<!-- Добавь .header-detail в детальной странице к .header-->
+			<!-- Добавь .header-projects в детальной странице к .header-->
+			<header data-wow-duration="2s" data-wow-delay="0.4s" class="header wow fadeIn">
+				<div class="wrap">
+					<a href="/" class="header__logo">
+						<img src="assets/images/svg/logo.svg" class="header__logo-icon">
+						<p class="header__logo-text">EcoTech</p>
+					</a>
+					<nav class="header__navigation">
+						<ul class="header__navigation__items">
+							<li class="header__navigation__item links__navigation__projects"><a href="projects.html">Проекты</a>
+							</li>
+							<li class="header__navigation__item links__navigation__contacts"><a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<section class="welcome">
+				<div class="background-animation">
+					<div class="background-animation__elems">
+						<div data-wow-duration="2s" data-wow-delay="0s" style="visibility:hidden;" class="wrap wow fadeIn">
+							<img src="assets/images/svg/rectangle.svg" class="background-animation__elem_square">
+							<img src="assets/images/svg/rectangle.svg" class="background-animation__elem_square1">
+							<img src="assets/images/svg/rectangle.svg" class="background-animation__elem_square2">
+							<img src="assets/images/svg/line.svg" class="background-animation__elem_line">
+							<img src="assets/images/svg/line.svg" class="background-animation__elem_line2">
+							<img src="assets/images/svg/triangle.svg" class="background-animation__elem__triangle">
+							<img src="assets/images/svg/triangle.svg" class="background-animation__elem__triangle1">
+							<img src="assets/images/svg/triangle.svg" class="background-animation__elem__triangle2">
+						</div>
+					</div>
+					<div class="background-animation__devices">
+						<div class="wrap">
+							<div data-wow-duration="1s" data-wow-delay="2.5s" style="visibility:hidden;" class="background-animation__devices__iphone wow fadeInUp">
+								<img src="assets/images/iphone.png">
+								<p class="background-animation__devices__iphone-text">Сайт мойки «<a href="#">Автосити</a>»</p>
+								<div class="background-animation__devices__iphone-line"></div>
+							</div>
+							<div data-wow-duration="1s" data-wow-delay="2.7s" style="visibility:hidden;" class="background-animation__devices__macbook wow fadeInUp">
+								<img src="assets/images/macbook.png">
+								<p class="background-animation__devices__macbook-text">Сайт стартапа «<a href="#">Пэйдрайверс</a>»</p>
+								<div class="background-animation__devices__macbook-line"></div>
+							</div>
+							<div data-wow-duration="1s" data-wow-delay="2.9s" style="visibility:hidden;" class="background-animation__devices__android wow fadeInUp">
+								<img src="assets/images/android.png">
+								<p class="background-animation__devices__android-text">Игра на Андроид «<a href="#">Старфайт Арена</a>»</p>
+								<div class="background-animation__devices__android-line"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap">
+					<h1 data-wow-duration="1s" data-wow-delay="1.1s" style="visibility:hidden;" class="welcome__title wow slideInLeft">Делаем <a href="projects.html#filter=.sites">сайты</a>,<br> <a href="projects.html#filter=.games">игры</a> и <a href="projects.html#filter=.apps">приложения</a><br> для бизнеса</h1>
+					<div data-wow-duration="1s" data-wow-delay="1.2s" style="visibility:hidden;" class="welcome__button wow slideInLeft">Связаться с нами</div>
+				</div>
+			</section>
+		</div>
+		<div class="footer-slide">
+			<section class="contact-with-us">
+				<div class="wrap">
+					<div class="contact-with-us__wrap-title">
+						<h2 class="section__title">Связаться с нами</h2>
+						<div class="contact-with-us__close">
+							<img src="assets/images/svg/close.svg">
+							<p class="contact-with-us__close__text">Закрыть</p>
+						</div>
+					</div>
+					<form id="contact-with-us__form" role="form" class="contact-with-us__form">
+						<div class="contact-with-us__form__item">
+							<p class="contact-with-us__form__text">Представьтесь</p>
+							<input id="name" name="name" minlength="2" type="text" required class="contact-with-us__form__input">
+						</div>
+						<div class="contact-with-us__form__item">
+							<p class="contact-with-us__form__text">Ваша почта</p>
+							<input id="email" type="text" name="email" required class="contact-with-us__form__input">
+						</div>
+						<div class="contact-with-us__form__item">
+							<p class="contact-with-us__form__text">Контактный телефон</p>
+							<input id="telephone" type="text" name="telephone" class="contact-with-us__form__input">
+						</div>
+						<div class="contact-with-us__form__item">
+							<input id="send-button" type="submit" name="button" class="contact-with-us__form__button">
+							<p class="contact-with-us__form__confidential">О конфиденциальности</p>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="policy">
+				<div class="wrap">
+					<div class="policy__wrap-title">
+						<h2 class="section__title">Политика конфиденциальности</h2>
+						<div class="policy__close">
+							<img src="assets/images/svg/close.svg">
+							<p class="policy__close__text">Закрыть</p>
+						</div>
+					</div>
+					<div class="policy__wrap">
+						<h4 class="policy__title">Сбор информации</h4>
+						<p class="policy__text">При оставлении заявки на ресурсе EcoTech клиенты предоставляют следующую сведения:</p>
+						<ul class="policy__list">
+							<li class="policy__list__item">Имя</li>
+							<li class="policy__list__item">Контактный E-mail</li>
+							<li class="policy__list__item">Контактный телефон</li>
+						</ul>
+						<p class="policy__text">Также администрация веб-студии получает данные об IP-адресе посетителей, а также о типе браузера, времени нахождения на сайте и прочие подобные сведения. Сбор ведётся с помощью сервисов статистики.</p>
+						<h4 class="policy__title">Использование информации</h4>
+						<p class="policy__text">Вся полученная информация используется администрацией EcoTech исключительно в целях связи с клиентом.</p>
+						<h4 class="policy__title">Защита персональных данных</h4>
+						<p class="policy__text">EcoTech обязуется не разглашать сведения, полученные от клиентов. Предоставление данных третьим лицам. Полученные сведения не могут быть переданы третьим лицам, за исключением следующих случаев:</p>
+						<ul class="policy__list">
+							<li class="policy__list__item">Для исполнения обязательств перед клиентом — только с его разрешения.</li>
+							<li class="policy__list__item">В соответствии с обоснованными и применимыми требованиями закона.</li>
+						</ul>
+						<h4 class="policy__title">Контакты</h4>
+						<p class="policy__text">По всем вопросам вы можете обращаться к администрации сайта.
+							<br>E-mail: order@upecotech.com
+							<br>Настоящая редакция политики конфиденциальности опубликована 18 сентября 2018 года.</p>
+					</div>
+				</div>
+			</section>
+		</div>
 		<script src="assets/scripts/libs/jquery/dist/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIxXO_SrSX_b5mDkAa-nep-O7AuFn1WQ&amp;callback=initMap"></script>
+		<script src="assets/scripts/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="assets/scripts/libs/jquery-masked/jquery-masked.js"></script>
 		<script src="assets/scripts/libs/wow/dist/wow.min.js"></script>
 		<script src="assets/scripts/main.js"></script>
+		<script src="assets/scripts/general.js"></script>
 	</body>
 
 </html>

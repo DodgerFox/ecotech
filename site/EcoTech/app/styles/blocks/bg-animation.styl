@@ -1,0 +1,303 @@
+.background-animation
+	position absolute
+	top 0
+	left 0
+	width 100%
+	bottom 0
+	.background-animation__elems
+		width 100%
+		height 100vh
+		.wrap
+			height 100%
+			.background-animation__elem_square
+				right 45%
+				top 25%
+				animation swimming 15s infinite ease-in-out
+				transform rotate(30deg)
+				position absolute
+			.background-animation__elem_square1
+				right -2%
+				top 65%
+				animation dancing 15s infinite ease-in-out
+				transform rotate(30deg)
+				position absolute
+			.background-animation__elem_square2
+				left -16%
+				top 75%
+				animation dancing 15s infinite ease-in-out
+				transform rotate(30deg)
+				position absolute
+			
+			.background-animation__elem_line
+				position absolute
+				left -2%
+				top 15%
+				animation dancing 25s infinite ease-in-out
+				transform rotate(30deg)
+			.background-animation__elem_line2
+				position absolute
+				right 1%
+				top 25%
+				animation dancing 25s infinite ease-in-out
+				transform rotate(30deg)
+			.background-animation__elem__triangle
+				right -15%
+				top 2%
+				position absolute
+				animation tusing 30s infinite ease-in-out
+				transform rotate(-30deg)
+			.background-animation__elem__triangle1
+				left 0
+				top 35%
+				position absolute
+				animation tusing 30s infinite ease-in-out
+			.background-animation__elem__triangle2
+				left 40%
+				top 85%
+				position absolute
+				animation tusing 30s infinite ease-in-out
+				transform rotate(30deg)
+			
+	.background-animation__devices
+		position absolute
+		width 100%
+		height 100%
+		left 0
+		top 0
+		.wrap
+			height 100%
+		.background-animation__devices__android
+			position absolute
+			bottom 60px
+			right 340px
+			img
+				animation levitationAndr 15s infinite ease-in-out
+				position relative
+				z-index 2
+			+to-width(1600px)
+				right 100px
+			+to-width(1250px)
+				img
+					max-width 340px
+			
+			p.background-animation__devices__android-text
+				position absolute
+				left 120px
+				top -120px
+				color white
+				padding-bottom 4px
+				border-bottom 2px solid white
+				white-space nowrap
+				transform rotate(-15deg)
+				z-index 5
+				a
+					color #1567d0
+					font-family Bold
+			.background-animation__devices__android-line
+				height 2px
+				width 120px
+				background-color white
+				position absolute
+				top -14px
+				left 38px
+				transform rotate(-90deg)
+				animation followLine2 15s infinite ease-in-out
+		
+		.background-animation__devices__macbook
+			position absolute
+			top 140px
+			right 520px
+			img
+				position relative
+				z-index 2
+				animation levitationMac 35s infinite ease-in-out
+			+to-width(1600px)
+				right 280px
+			+to-width(1250px)
+				right 170px
+				img
+					max-width 330px
+			p.background-animation__devices__macbook-text
+				position absolute
+				left -80px
+				top 320px
+				color white
+				padding-bottom 4px
+				border-bottom 2px solid white
+				z-index 5
+				a
+					color #1567d0
+					font-family Bold
+			.background-animation__devices__macbook-line
+				height 2px
+				width 100px
+				background-color white
+				position absolute
+				top 305px
+				left 127px
+				transform rotate(-45deg)
+				
+		.background-animation__devices__iphone
+			position absolute
+			top 95px
+			left 550px
+			img
+				animation levitation 30s infinite ease-in-out
+				position relative
+				z-index 2
+			+to-width(1750px)
+				left 410px
+			+to-width(1600px)
+				left 210px
+			+to-width(1250px)
+				left 210px
+			+to-width(1100px)
+				left 160px
+				img
+					max-width 180px
+			p.background-animation__devices__iphone-text
+				position absolute
+				right -150px
+				top 70px
+				color white
+				padding-bottom 4px
+				border-bottom 2px solid white
+				z-index 5
+				a
+					color #1567d0
+					font-family Bold
+			.background-animation__devices__iphone-line
+				height 2px
+				width 100px
+				background-color white
+				position absolute
+				top 125px
+				right 8px
+				transform rotate(-45deg)
+				animation followLine 15s infinite ease-in-out
+				
+@keyframes followLine{
+	0%{
+		transform rotate(-45deg)
+	}
+	50%{
+		transform rotate(-65deg) translate(-3px, 18px)
+	}
+	100%{
+		transform rotate(-45deg)
+	}
+}
+
+@keyframes followLine2{
+	0%{
+		transform rotate(-60deg)
+	}
+	50%{
+		transform rotate(-40deg) translate(-4px, -20px)
+	}
+	100%{
+		transform rotate(-60deg)
+	}
+}
+
+@keyframes swimming{
+	0%{
+		transform rotate(30deg)
+	}
+	25%{
+		transform translate(-50px, -100px)
+	}
+	100%{
+		transform translate(0, 0)
+		transform rotate(1470deg)
+	}
+
+}
+
+@keyframes dancing{
+	0%{
+		transform rotate(30deg)
+	}
+	50%{
+		transform translate(-70px, 120px)
+	}
+
+	100%{
+		transform rotate(1830deg)
+	}
+
+}
+
+@keyframes tusing{
+	0%{
+		transform rotate(30deg)
+	}
+	50%{
+		transform translate(50px, 80px)
+	}
+
+	100%{
+		transform rotate(1830deg)
+	}
+
+}
+
+@keyframes levitation{
+	0%{
+		
+	}
+	25%{
+		transform translate(10px, 40px) rotate(4deg)
+	}
+	50%{
+		transform translate(0px, 0px) rotate(6deg)
+	}
+	75%{
+		transform translate(10px, 40px) rotate(8deg)
+	}
+
+	100%{
+		transform translate(0px, 0px)
+	}
+
+}
+
+@keyframes levitationMac{
+	0%{
+		
+	}
+	25%{
+		transform translate(25px, -40px)  rotate(3deg)
+	}
+	50%{
+		transform translate(0px, 0px)  rotate(5deg)
+	}
+	75%{
+		transform translate(25px, -40px)  rotate(8deg)
+	}
+	
+	100%{
+		transform translate(0px, 0px)
+	}
+
+}
+
+@keyframes levitationAndr{
+	0%{
+		
+	}
+	50%{
+		transform translate(-25px, -40px)  rotate(-3deg)
+	}
+
+	100%{
+		transform translate(0px, 0px)
+	}
+
+}
+
+@media screen and (max-height: 860px){
+	.background-animation .background-animation__devices .background-animation__devices__macbook{
+		top: 50px;
+	}
+}

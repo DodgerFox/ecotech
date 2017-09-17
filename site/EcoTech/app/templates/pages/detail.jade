@@ -3,16 +3,12 @@ extends ../layouts/default
 block head
 
 block content
-	include ../blocks/header
-	include ../blocks/section-pickshot
-	include ../blocks/section-detail-main
-	include ../blocks/footer
+	include ../blocks/section-contacts
+	.page.page-detail
+		include ../blocks/header
+		include ../blocks/section-pickshot
+		include ../blocks/section-detail-main
 
 	script(src="assets/scripts/libs/jquery/dist/jquery.min.js")
-	//- script(src="assets/scripts/jq.validation.js")
-	//- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
-	//- script(src="assets/scripts/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js")
-	//-script(src="assets/scripts/libs/anchor-js/anchor.min.js")
-	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIxXO_SrSX_b5mDkAa-nep-O7AuFn1WQ&callback=initMap")
-	//- script(src="assets/scripts/sticky.js")
+	//- script(src='assets/scripts/libs/wow/dist/wow.min.js')
 	script(src="assets/scripts/main.js")

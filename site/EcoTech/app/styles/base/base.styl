@@ -3,7 +3,7 @@ body
 	height 100vh
 	min-width 360px
 	transition 0.5s all
-
+	
 html
 	font-family Regular
 	font-weight normal
@@ -24,13 +24,58 @@ html
 section
 	font-size 1.6rem
 
+.page
+	transform translate(0px, 0px)
+	transition 0.5s transform
+	width 100%
+	&:after
+		content ''
+		height 100vh
+		width 100%
+		position absolute
+		left 0
+		top 0
+		pointer-events none
+		background-color rgba(37, 40, 45, .0)
+		transition 0.5s background-color
+		z-index 21
+	&.page-transform
+		transform translate(0px, -287px)
+		&:after
+			background-color rgba(37, 40, 45, .6)
+			pointer-events auto
+	&.page-transform-up
+		transform translate(0px, 448px)
+		&:after
+			background-color rgba(37, 40, 45, .6)
+			pointer-events auto
+	&.page-fixed
+		position fixed
+
+.footer-slide
+	width 100%
+	top 100vh
+	position fixed
+	background white
+	transform translateY(0px)
+	transition 0.5s transform
+	&.footer-slide_open-one
+		transform translateY(-287px)
+	&.footer-slide_open-two
+		transform translateY(-400px)
+		position relative
+
 .wrap
 	position relative
-	width 1240px
+	width 1545px
+	padding 0 100px
 	margin-left auto
 	margin-right auto
+	+to-width(1920px)
+		width 100%
+		
 
-	+to-width(1250px)
+/*	+to-width(1250px)
 		width 960px
 
 	+to-width(992px)
@@ -39,7 +84,7 @@ section
 	+to-width(960px)
 		width 768px
 		padding 0 20px
-
+*/
 	+to-width(784px)
 		width 100%
 		padding 0 20px
@@ -55,12 +100,9 @@ section
 section
 	.section__title
 		color #212121
-		font-size 48px
-		text-align center
-		&.section__title_left
-			text-align left
-		+to-width(550px)
-			font-size 32px
+		font-size 32px
+		text-align left
+		font-family Black
 	.section__text
 		color #414141
 		font-size 16px
@@ -82,6 +124,16 @@ section
 		margin-right 8px
 		border-radius 50px
 		background-color #7ed321
+		&.tags__tag_design
+			background-color #7ed321
+		&.tags__tag_frontend
+			background-color #fee23c
+			color black
+		&.tags__tag_backend
+			background-color #2c9cfc
+		&.tags__tag_designing
+			background-color #b79d82
+		
 
 .simple-button
 	width 180px
@@ -93,69 +145,3 @@ section
 	align-items center
 	border-radius 50px
 		
-.background-animation
-	position fixed
-	top 0
-	left 0
-	width 100%
-	bottom 0
-	filter unicode('progid:DXImageTransform.Microsoft.Blur(pixelRadius=5)')
-	filter blur(3px)
-	&:after
-		content ''
-		width 100%
-		height 100%
-		position absolute
-		left 0
-		top 0
-		filter blur(5px)
-	.background-animation__elem_square
-		height 50px
-		width 50px
-		border-radius 8px
-		border 5px solid #6b7df0
-		right 25%
-		top 25%
-		animation swimming 15s infinite ease-in-out
-		transform rotate(30deg)
-		position absolute
-	.background-animation__elem_line
-		position absolute
-		height 5px
-		width 135px
-		border-radius 8px
-		border 5px solid #e3514f
-		left 25%
-		top 15%
-		animation dancing 25s infinite ease-in-out
-		transform rotate(30deg)
-
-@keyframes swimming{
-	0%{
-				
-	}
-	25%{
-		transform translate(-50px, -100px)
-	}
-	50%{
-	}
-	100%{
-		transform translate(0, 0)
-		transform rotate(1470deg)
-	}
-
-}
-
-@keyframes dancing{
-	0%{
-		
-	}
-	50%{
-		transform translate(70px, 120px)
-	}
-
-	100%{
-		transform rotate(1830deg)
-	}
-
-}

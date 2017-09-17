@@ -1,11 +1,13 @@
-header.header
+// Добавь .header-detail в детальной странице к .header
+// Добавь .header-projects в детальной странице к .header
+header.header.wow.fadeIn(data-wow-duration="2s" data-wow-delay="0.4s")
 	.wrap
 		a(href="/").header__logo
 			img(src="assets/images/svg/logo.svg").header__logo-icon
 			p.header__logo-text EcoTech
 		nav.header__navigation
 			ul.header__navigation__items
-				li.header__navigation__item.links__navigation__about 
+				li.header__navigation__item.links__navigation__projects
 					a(href="projects.html") Проекты
-				li.header__navigation__item.links__navigation__factories 
+				li.header__navigation__item.links__navigation__contacts
 					a(href="#") Контакты
